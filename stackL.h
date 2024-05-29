@@ -1,5 +1,5 @@
 #pragma once
-typedef char element;		 
+typedef char element;		
 
 typedef struct  stackNode {	
 	element data;
