@@ -10,7 +10,7 @@ void push(element item) {
 	stackNode* temp = (stackNode*)malloc(sizeof(stackNode));
 
 	temp->data = item;
-	temp->link = top;    
+	temp->link = top;   
 	top = temp;           
 }
 
