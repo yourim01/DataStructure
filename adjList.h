@@ -1,5 +1,7 @@
 #pragma once
 #define MAX_VERTEX 30					
+#define FALSE 0       
+#define TRUE 1        
 
 typedef struct graphNode {
 	int vertex;							
@@ -9,6 +11,7 @@ typedef struct graphNode {
 typedef struct graphType {
 	int n;								
 	graphNode* adjList_H[MAX_VERTEX];	
+	int visited[MAX_VERTEX];			
 } graphType;
 
 void createGraph(graphType* g);

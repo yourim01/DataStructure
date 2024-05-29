@@ -4,8 +4,10 @@
 void createGraph(graphType* g) {
 	int v;
 	g->n = 0;							
-	for (v = 0; v < MAX_VERTEX; v++)
+	for (v = 0; v < MAX_VERTEX; v++) {
 		g->adjList_H[v] = NULL;			
+		g->visited[v] = FALSE;			
+	}
 }
 
 void insertVertex(graphType* g, int v) {
@@ -13,7 +15,7 @@ void insertVertex(graphType* g, int v) {
 		printf("\n 그래프 정점의 개수를 초과하였습니다!");
 		return;
 	}
-	g->n++;							
+	g->n++;								
 }
 
 void insertEdge(graphType* g, int u, int v) {
